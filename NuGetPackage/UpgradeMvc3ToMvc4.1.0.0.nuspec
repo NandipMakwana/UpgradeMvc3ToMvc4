@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>UpgradeMvc3ToMvc4</id>
+        <version>1.0.0</version>
+        <title>Auto Upgrade MVC 3 To MVC 4</title>
+        <authors>Nandip Makwana</authors>
+        <owners>Nandip</owners>
+        <projectUrl>https://github.com/NandipMakwana/UpgradeMvc3ToMvc4</projectUrl>
+        <iconUrl>http://1.bp.blogspot.com/-x3d6JUxd6jE/TvTo9JzGC1I/AAAAAAAAAhE/H3oGq-UyOgo/s1600/Nandip%2BMakwana.jpg</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Package for auto upgrade MVC 3 Application to MVC 4 Application</description>
+        <summary>Package for auto upgrade MVC 3 Application to MVC 4 Application</summary>
+        <releaseNotes>Package for auto upgrade MVC 3 Application to MVC 4 Application</releaseNotes>
+        <language />
+        <tags>MVC Upgrade</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.0">
+                <dependency id="Microsoft.AspNet.Mvc" version="[4.0.20710.0]" />
+                <dependency id="Microsoft.AspNet.Mvc.FixedDisplayModes" version="[1.0.0]" />
+                <dependency id="Microsoft.AspNet.Web.Optimization" version="[1.0.0]" />
+                <dependency id="Newtonsoft.Json" version="[4.5.10]" />
+                <dependency id="Microsoft.AspNet.WebPages.OAuth" version="[2.0.20710.0]" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="content\App_Start\AuthConfig.cs.pp" target="content\App_Start\AuthConfig.cs.pp" />
+        <file src="content\App_Start\BundleConfig.cs.pp" target="content\App_Start\BundleConfig.cs.pp" />
+        <file src="content\web.config.transform" target="content\web.config.transform" />
+        <file src="tools\install.ps1" target="tools\install.ps1" />
+        <file src="Readme.txt" target="Readme.txt" />
+    </files>
+</package>
